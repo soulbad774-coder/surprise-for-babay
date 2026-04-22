@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 18th Birthday Babay ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  text-align: center;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.section {
+  padding: 40px 20px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: #ff4b5c;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.gallery img {
+  width: 120px;
+  height: 120px;
+  margin: 10px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+#surprise {
+  display: none;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* Hearts */
+.heart {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: red;
+  transform: rotate(45deg);
+  animation: float 5s linear infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart::before { top: -10px; left: 0; }
+.heart::after { left: -10px; top: 0; }
+
+@keyframes float {
+  0% { bottom: -50px; opacity: 1; }
+  100% { bottom: 100%; opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<h1>Happy 18th Birthday Babay ❤️</h1>
+
+<div class="section">
+  <h2>💌 My Message</h2>
+  <p>
+    Aaj ka din sirf tumhare naam ❤️  
+    Tum meri life ki sabse special person ho  
+    Tumhari smile meri duniya hai 😊  
+    Happy Birthday meri jaan 💖
+  </p>
+</div>
+
+<div class="section gallery">
+  <h2>📸 Memories</h2>
+  <img src="img1.jpg">
+  <img src="img2.jpg">
+  <img src="img3.jpg">
+</div>
+
+<div class="section">
+  <h2>🎥 Video</h2>
+  <video width="250" controls>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div class="section">
+  <h2>🎶 Music</h2>
+  <audio controls autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+<div class="section">
+  <h2>❤️ Why I Love You</h2>
+  <p>
+    • Tumhari smile 😊<br>
+    • Tumhara attitude 😎<br>
+    • Tumhara care 💖<br>
+    • Tum sabse alag ho ❤️
+  </p>
+</div>
+
+<div class="section">
+  <h2>🎁 Surprise</h2>
+  <button class="btn" onclick="showSurprise()">Click Me</button>
+  <div id="surprise">
+    💖 I LOVE YOU SO MUCH BABAY 💖
+  </div>
+</div>
+
+<div class="section">
+  <h2>🌟 My Promise</h2>
+  <p>
+    Main hamesha tumhare saath rahunga ❤️  
+    Har situation me tumhe support karunga 💖  
+  </p>
+</div>
+
+<div class="section">
+  <h1>🎂 Happy Birthday My Love ❤️</h1>
+  <p>Made with ❤️ by Ruhullah</p>
+</div>
+
+<script>
+function showSurprise() {
+  document.getElementById("surprise").style.display = "block";
+}
+
+setInterval(() => {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 5000);
+}, 300);
+</script>
+
+</body>
+</html>
